@@ -1,0 +1,32 @@
+/* Front-end/src/components/TableQR/TableQR.css */
+.table-qr-container {
+    width: 200px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .table-info {
+    margin-bottom: 15px;
+  }
+  
+  .table-info h2 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .qr-code {
+    margin: 15px 0;
+  }
+  
+  .qr-code img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .instructions {
+    font-size: 14px;
+    color: #666;
+  }

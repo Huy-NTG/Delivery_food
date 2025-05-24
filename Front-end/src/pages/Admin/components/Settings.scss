@@ -1,0 +1,106 @@
+.settings {
+    .settings-section {
+        background: #fff;
+        border-radius: 12px;
+        padding: 24px;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+        margin-bottom: 24px;
+
+        h2 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #2d3a4b;
+            margin: 0 0 24px 0;
+        }
+    }
+
+    .settings-form {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 24px;
+    }
+
+    .notification-settings {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .toggle-label {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            cursor: pointer;
+
+            input[type='checkbox'] {
+                width: 40px;
+                height: 20px;
+                border-radius: 10px;
+                background: #ddd;
+                position: relative;
+                appearance: none;
+                cursor: pointer;
+                transition: background 0.2s;
+
+                &:checked {
+                    background: #2d3a4b;
+
+                    &::before {
+                        transform: translateX(20px);
+                    }
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 50%;
+                    background: #fff;
+                    top: 2px;
+                    left: 2px;
+                    transition: transform 0.2s;
+                }
+            }
+
+            .toggle-text {
+                font-size: 14px;
+                color: #2d3a4b;
+            }
+        }
+    }
+
+    .settings-actions {
+        display: flex;
+        justify-content: flex-end;
+        gap: 12px;
+        margin-top: 24px;
+
+        button {
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+
+            &.save-btn {
+                background: #2d3a4b;
+                border: none;
+                color: #fff;
+
+                &:hover {
+                    background: #1a2533;
+                }
+            }
+
+            &.reset-btn {
+                background: #f5f6fa;
+                border: none;
+                color: #666;
+
+                &:hover {
+                    background: #eee;
+                }
+            }
+        }
+    }
+}

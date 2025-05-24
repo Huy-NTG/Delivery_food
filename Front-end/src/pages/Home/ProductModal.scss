@@ -1,0 +1,134 @@
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.25);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-content {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 32px #0002;
+  padding: 32px 32px 24px 32px;
+  min-width: 520px;
+  max-width: 96vw;
+  position: relative;
+  animation: modalIn 0.2s;
+}
+@keyframes modalIn {
+  from { transform: translateY(-40px) scale(0.98); opacity: 0; }
+  to { transform: none; opacity: 1; }
+}
+.modal-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #888;
+  cursor: pointer;
+  z-index: 2;
+}
+.modal-header {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+}
+.modal-body {
+  display: flex;
+  gap: 24px;
+}
+.modal-img-block {
+  flex: none;
+  display: flex;
+  align-items: flex-start;
+}
+.modal-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #eee;
+}
+.modal-info-block {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.modal-row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 6px;
+}
+.modal-price-block {
+  margin-left: auto;
+  text-align: right;
+}
+.modal-price {
+  color: #e53935;
+  font-size: 22px;
+  font-weight: 700;
+}
+.modal-qty-row {
+  gap: 16px;
+}
+.modal-qty-block {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 12px;
+}
+.modal-qty-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: 1.5px solid #bbb;
+  background: #fff;
+  color: #222;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.modal-qty-btn:hover {
+  background: #e53935;
+  color: #fff;
+}
+.modal-qty {
+  font-size: 18px;
+  font-weight: 700;
+  min-width: 24px;
+  text-align: center;
+}
+.modal-attr-row {
+  font-size: 15px;
+  color: #444;
+  gap: 8px;
+}
+.modal-add-btn {
+  width: 100%;
+  background: #e53935;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 0;
+  margin-top: 18px;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px #f5bdbd33;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.modal-add-btn:hover {
+  background: #b71c1c;
+} 

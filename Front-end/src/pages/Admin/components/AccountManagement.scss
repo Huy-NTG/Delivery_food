@@ -1,0 +1,16 @@
+.account-management {
+    .accounts-table {
+        overflow-x: auto;
+    }
+
+    .role-badge {
+        min-width: 110px;
+        display: inline-block;
+        text-align: center;
+        padding: 6px 18px;
+        border-radius: 12px;
+        font-size: 13px;
+        font-weight: 600;
+        color: #fff;
+    }
+}

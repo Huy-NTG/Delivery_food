@@ -1,0 +1,19 @@
+.product-management {
+    .products-table {
+        overflow-x: auto;
+    }
+
+    .view-items-btn {
+        background: none;
+        border: none;
+        color: #2196f3;
+        cursor: pointer;
+        padding: 4px 8px;
+        border-radius: 4px;
+        font-size: 14px;
+
+        &:hover {
+            background: #e3f2fd;
+        }
+    }
+}
